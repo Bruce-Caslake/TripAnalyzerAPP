@@ -7,13 +7,15 @@ using static System.Console;
 
 namespace TripAnalyzerAPP
 {
+    //This is the UserTrip for the TripAnalyzerAPP. It gathers the information the user enters, when the app is run.
     public class UserTrip
     {
         private string destination;
         private double milesDriven;
         private double numberOfGallons;
         private double costOfGas;
-        
+
+        // These are the constructors. Not exactly sure what they are used for.
         public UserTrip()
         {
 
@@ -25,6 +27,7 @@ namespace TripAnalyzerAPP
             GallonsUsed = numberOfGallons;
             CostOfGas = costOfGas;
         }
+        //The following are the Modifer's, the getters, and setters for the user's entered information.
         public string Destination { get; set; }
         public double MilesDriven { get; set; }
         public double GallonsUsed { get; set; }
