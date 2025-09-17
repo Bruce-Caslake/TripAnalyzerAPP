@@ -10,6 +10,7 @@ namespace TripAnalyzerAPP
     {
         static void Main()
         {
+            //This creates the example trip from the exmaples class file, using the given information and outputs the information
             ExampleTrip tripExample = new ExampleTrip("Denver", 546, 34, 120.23);
 
             WriteLine("Welcome to your Trip Analzyer APP");
@@ -23,7 +24,8 @@ namespace TripAnalyzerAPP
             Write("Please press Enter to enter your Trip: ");
             WriteLine();
             ReadKey();
-
+            // The following creates a new user trip instances using the usertrip class. while gathering the information here
+            //and inputing it into the userTrip class, finally printing out the formatted output
             UserTrip userTravel = new UserTrip();
 
             userTravel.Destination = AskForDestination();
